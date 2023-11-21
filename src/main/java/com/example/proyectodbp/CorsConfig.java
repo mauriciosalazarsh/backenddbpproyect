@@ -14,7 +14,7 @@ public class CorsConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         // Permitir solicitudes desde el dominio de tu frontend
-        config.addAllowedOrigin("http://localhost:3000" , "http://frontenddbp-production.up.railway.app"); // Reemplaza con la URL de tu frontend
+        config.addAllowedOrigin("http://localhost:3000"); // Reemplaza con la URL de tu frontend
         config.addAllowedMethod("*");
         config.addAllowedHeader("*");
         source.registerCorsConfiguration("/**", config);
